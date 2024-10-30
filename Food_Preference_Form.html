@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Meocha Burch</h1>
+        <main>
+            <!--A brief description of Me-->
+            <div>
+                <p>
+                    I am eager to transition into the role of Full Stack Developer specializing in both front-end and back-end. My previous experience is in retail and banking. I have worked in both sectors from a training capacity and hope to utilize those skills as a Full-Stack Developer. 
+                </p>
+                <div>
+                    <fieldset>
+                        <legend>Food Preference</legend>
+            
+                        <label>
+                            <input type="checkbox" name="preference" value="Vegetarian">
+                            Vegetarian
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Vegan">
+                            Vegan
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Gluten free">
+                            Gluten Free
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Pescetarian">Pescetarian
+                        </label><br><br>
+                        <label>
+                            <input type="checkbox" name="preference" value="Diary Free"> Diary Free
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Paleo"> Paleo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Raw Food"> Raw Food
+                        </label>
+                        <label>
+                            <input type="checkbox" name="preference" value="Keto">Keto
+                        </label><br>
+                        <br>
+                        <fieldset>
+                            <legend>Favorite Cuisine</legend>
+                
+                            <label>
+                                <input type="radio" name="cuisine" value="Italian">
+                                Italian
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="Mexican">
+                                Mexican
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="Asian">
+                                Asian
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="Mediterranean">Mediterranean
+                            </label><br><br>
+                            <label>
+                                <input type="radio" name="cuisine" value="American"> American
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="French"> French
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="Caribbean"> Caribbean
+                            </label>
+                            <label>
+                                <input type="radio" name="cuisine" value="Southern">Southern<br>
+                            </label><br>
+                    
+                            <fieldset>
+                                <legend>Food Specifications</legend>
+
+                      <div id="form_input">
+                        <h4>Favorite Food</h4>
+                        <form method="post"><em>Favorites here:</em>
+                         <input type="text" name="favorite food"><input type="submit">
+                            <br>
+                            <h4>Dietary Restrictions</h4>
+                            <em>Specify Restrictions:</em><input type="text" name="specify restrictions"><input     type="submit" value="Submit Form"><br>
+                                            
+                            <br>
+                            <strong>Customer Name</strong>: <input type="text" placeholder="Your name here">
+                        </form><br>
+                        <div id="form_textarea">
+                            <h5>Additional Comments or Details Concerning Food Preferences:</h5>
+                            <form>
+                                <textarea name="note"></textarea>
+                            </form><br>
+                        </div>
+                        <h3>Meals Per Day</h3>
+                        <form>
+                            # of Meals per day: <input type="number" min="1" max="5">
+                        </form><br>
+                        <form>
+                            <input type="test" placeholder="Fave Dish Details = 10 chars" maxlength="10">
+                        </form><br>
+                    </fieldset>
+                    
+                </div><br>
+                
+                
+                    <h4>Favorites Currently Unavailable</h4>
+                    <form>
+                        <input type="text" placeholder="Calamari, Lobster, Caviar" disabled>
+                    </form><br>
+                    <h4>Pre-filled Foods</h4>
+                    <form>
+                        <input type="text" placeholder="Salads & Gourmet Cold-Cut Sandwiches"readonly>
+                    </form>
+                </div>
+                <div id="form_output">
+                    <h3>Total Calories Consumed</h3>
+                    <form oninput="result.value=parseInt(caloriecount.value)+parseInt(Servingsize.value)">
+                        <input type="range" id="calorie count" value="1500">Calorie Count +
+                        <input type="number" id="Serving Size" value="3"> Serving Size
+                        =<output name="result" for="a b">1500</output>
+                    </form><br>
+                </div>
+                <div id="form_select_option">
+                    <h3>Beverage Preference</h3>
+                    <form>
+                        <label for="cars">Beverage Selection</label>
+                        <select name="drinks">
+                            <option value="Bottled Water">Bottled Water</option>
+                            <option value="Soda">Soda</option>
+                            <option value="Juice">Juice</option>
+                            <option value="Tea">Tea</option>
+                            <option value="Coffee">Coffee</option>
+                        </select>
+                    </form>
+                    <h3>Nonalcoholic & Alcoholic Beverages:</h3>
+                    <form>
+                        <label for="beverages">Additional Beverage Options</label>
+                        <select id="beverages" name="fruits">
+                            <optgroup label="Nonalcoholic">
+                                <option value="seltzer water">Seltzer Water</option>
+                                <option value="arnold palmer">Arnold Palmer</option>
+                                <option value="virgin mary">Virgin Mary</option>
+                            </optgroup>
+                            <optgroup label="
+                            Alcoholic Beverages">
+                                <option value="bloody mary">Blood Mary</option>
+                                <option value="amaretto sour">Amaretto Sour</option>
+                                <option value="bellini">bellini</option>
+            
+                            </optgroup>
+            
+                        </select>
+                    </form>
+            
+                </div>
+            </body>
+            </html>
+    
+</body>
+</html>
